@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  /* flex: 1; */
+  /* height: 130vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(9, 0, 132);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 1s ease;
+  cursor: pointer;
+  /* background-color: rgb(26, 194, 255); */
+  border-left: 5px solid; /* set border */
+  border-right: 5px solid; /* set border */
+  border-image: linear-gradient(to bottom, #ff00a0, #00f9ff) 1;
+}
+
+.section:nth-child(1),.section:nth-child(3) {
+  background-color: #99ff99;
+  color: #99ff99;
+
+}
+.section:nth-child(1):hover,.section:nth-child(3):hover{
+  background-color: #ffffff;
+
+} 
+
+.section:nth-child(2) {
+  background-color: #ffffff;
+  color: white;
+
+}
+.section:nth-child(2):hover{
+  background-color: #99ff99;
+
+}
+
+
+
+.section .section_img {
+  max-width: 100%;
+  transition: all 0.5s ease;
+}
+.section:hover .afterHover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .afterHover {
+  display: none;
+  transition: all 1s ease;
+}
+.afterHover {
+  width: 90%;
+}
+.afterHover .heading {
+  min-width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  /* text-decoration: underline; */
+  font-weight: 700;
+  margin: 20px auto;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+.afterHover .details {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  width: 98%;
+  /* color: rgba(9, 0, 132, 0.867); */
+  transition: all 12s ease;
+}
+/* Hover effect */
+.section:hover,
+.section:focus,
+.section:active {
+  flex: 3; /* Expand hovered one */
+  /* background-color: rgba(181, 235, 255, 0.775); */
+}
+
+.section:hover .section_img {
+  display: none;
+}
+.img_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.afterHover .img_section img {
+  /* width: %; */
+  max-width: 50%;
+  /* margin: 10px; */
+  /* margin-left: 80px; */
+}
+
+.section:not(:hover) {
+  flex: 1; /* Others shrink */
+}
