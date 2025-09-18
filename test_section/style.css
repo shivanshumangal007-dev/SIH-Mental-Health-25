@@ -76,7 +76,7 @@ body {
   margin: 20px auto;
   text-transform: uppercase;
   transition: all 1s ease;
-  text-shadow: #000000c0 1px 0 10px
+  text-shadow: #000000c0 1px 0 10px;
 }
 .afterHover .details {
   font-size: 1.2rem;
