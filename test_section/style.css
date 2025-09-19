@@ -33,7 +33,7 @@ body {
 
 .section:nth-child(1),.section:nth-child(3) {
   background-color: #99ff99;
-  color: #99ff99;
+  color: darkgreen;
 
 }
 .section:nth-child(1):hover,.section:nth-child(3):hover{
@@ -82,13 +82,14 @@ body {
   transition: all 1s ease;
   text-shadow: #000000c0 1px 0 10px;
 }
-.afterHover .details {
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  width: 98%;
-  /* color: rgba(9, 0, 132, 0.867); */
-  transition: all 12s ease;
+.section:nth-child(1) .heading,.section:nth-child(3) .heading{
+  text-shadow: #7d7d7dc0 1px 0 10px;
+}
+.afterHover .details img {
+
+  width: 100%;
+  margin: 20 auto;
+  
 }
 /* Hover effect */
 .section:hover,
