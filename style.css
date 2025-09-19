@@ -1,15 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 * {
   margin: 0;
   font-family: "Inter", sans-serif;
   padding: 0;
+  max-width: 100%;
 }
 /* navbar */
+:root{
+  --background_colour: white; 
+  --sec_background_color : rgb(247, 255, 197);
+  --font_section_heading :  "Chakra Petch", sans-serif;
+}
 
 .navbar {
   position: sticky;
   top: 0px;
-  background-color: #ffff;
+  background-color: var(--background_colour);
   z-index: 10;
 }
 
@@ -165,6 +172,8 @@ header {
   text-decoration: underline;
   font-weight: 600;
   margin-bottom: 30px;
+  font-family: var(--font_section_heading);
+
 }
 .text_area_sec12 .game_heading span {
   font-weight: 400;
@@ -205,8 +214,8 @@ header {
 .sec2 {
   width: 100vw;
   max-width: 100%;
-  background-color: rgb(245, 255, 185);
-  background-color: #ccffff;
+  /* background-color: rgb(245, 255, 185); */
+  background-color: var(--background_colour);
 
   box-sizing: border-box;
   display: grid;
@@ -225,6 +234,7 @@ header {
   margin-bottom: 40px;
   color: #087f6d;
   text-decoration: underline;
+  font-family: var(--font_section_heading);
 }
 .text_box_sec2 span a:hover {
   text-decoration: underline;
@@ -268,12 +278,12 @@ header {
 
 /* section3-test */
 
-.sec3 {
+/* .sec3 {
   width: 100vw;
   max-width: 100%;
   display: grid;
+  background-color: var(--background_colour);
   place-content: center;
-  background-color: #ccffff;
 }
 .text_area_sec3 {
   width: 65vw;
@@ -284,11 +294,11 @@ header {
   text-transform: uppercase;
   color: #087f6d;
   margin: 50px 10px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font_section_heading);
+
 }
 .boxes_sec3 {
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -307,7 +317,6 @@ header {
   transform: scale(1.02);
 }
 .common1_sec3 {
-  /* border-left: balck 2px solid; */
   line-height: 30px;
   font-size: 10px;
 }
@@ -345,7 +354,11 @@ header {
 .btn_sec3:hover {
   background-color: #db8a21;
   color: white;
-}
+} */
+
+
+/* section 3-new */
+
 
 /* section4 - help */
 
@@ -353,8 +366,8 @@ header {
   width: 100vw;
   max-width: 100%;
   display: grid;
+  background-color: var(--background_colour);
   place-content: center;
-  background-color: #ccffff;
 }
 .text_area_sec4 {
   width: 65vw;
@@ -365,12 +378,14 @@ header {
   text-transform: uppercase;
   color: #087f6d;
   margin: 50px 10px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font_section_heading);
+
 }
 .boxes_sec4 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 .box_sec4 {
   width: 48%;
@@ -392,12 +407,17 @@ header {
   color: #e59d3f;
   margin-bottom: 15px;
 }
+.box_sec4 h1:hover{
+  text-decoration: underline;
+}
 .box_sec4 p {
   font-size: 1.5rem;
   text-align: center;
 }
 
 footer {
+  background-color: black;
+  color: white;
   display: grid;
   place-content: center;
   width: 100vw;
