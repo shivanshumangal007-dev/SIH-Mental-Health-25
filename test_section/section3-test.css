@@ -13,6 +13,16 @@ body {
   /* display: flex; */
   font-family: Arial, sans-serif;
 }
+.section3_heading{
+  font-family: "Londrina Outline", sans-serif;
+  font-size: 6.5rem;
+  letter-spacing: 20px;
+  font-weight: bolder;
+  color: #006400;
+  text-align: center;
+  text-shadow: #007406 1px 0 5px;
+
+}
 
 .section {
   /* flex: 1; */
