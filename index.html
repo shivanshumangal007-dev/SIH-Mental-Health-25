@@ -6,6 +6,7 @@
     <title>NORMAL</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./test_section/section3-test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   </head>
   <body>
     <nav class="navbar">
@@ -29,7 +30,25 @@
           <span>Dashboard</span>
         </button>
       </div>
+
+      <div class="toggle_btn">
+        <i onclick="showSidebar()" class="fa-solid fa-sliders"></i>
+        <div class="nav_list sidebar">
+        <ul>
+          <li onclick="hideSidebar()"><a href="#" class="cross_toggle"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">RESOURCES</a></li>
+          <li><a href="">TEST</a></li>
+          <li><a href="">APPOINTMENT</a></li>
+        </ul>
+      </div>
+      </div>
     </nav>
+
+    <!-- header -->
+
+
     <header>
       <div class="text_area">
         <img src="./image/Screenshot 2025-09-08 215857.png" alt="" />
@@ -38,6 +57,9 @@
         <img src="./image/1694_U1RVRElPIEtBVCAzOTItMTE.png" alt="" />
       </div>
     </header>
+
+    <!-- severe help btn -->
+     <a href="#" id="severe_help_btn"><img src="./image/severe.png" alt=""></a>
     <!-- section12 - game -->
 
     <section class="game_sec12">
@@ -215,5 +237,8 @@
     <footer>
         © 2025 Tech Arsenal. Created for Smart India Hackathon'25
     </footer>
+
+    <!-- js files -->
+     <script src="./script.js"></script>
   </body>
 </html>
