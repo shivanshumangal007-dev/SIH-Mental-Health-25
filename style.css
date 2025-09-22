@@ -135,6 +135,13 @@ nav .login_nav button:hover {
 nav .login_nav button:hover span {
   color: white;
 }
+.navbar_btn_a{
+  color: darkgreen;
+  text-decoration: none;
+}
+nav .login_nav button:hover .navbar_btn_a{
+  color: white;
+}
 
 /* navbar media queries */
 
@@ -187,8 +194,14 @@ nav .login_nav button:hover span {
     right: -300px;
   }
   nav .sidebar ul li a {
-    color: white;
+    color: rgba(255, 255, 255, 0.788);
     height: 100%;
+  }
+  nav .sidebar ul li a:hover{
+    color: white;
+  }
+  nav .nav_list ul li::after {
+    background-color: white;
   }
 }
 /* header */
@@ -223,6 +236,7 @@ header {
   bottom: 2px;
   right: 2px;
   width: 100px;
+  z-index: 999;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: severe_help_animation 0.5s ease-in-out 0s infinite alternate;
 }
